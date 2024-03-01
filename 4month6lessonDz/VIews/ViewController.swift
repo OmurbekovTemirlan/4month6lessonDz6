@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     private let sortByLbl: UILabel = {
         let label = UILabel()
         label.text = "Sort By"
-        label.textColor = .black
+        label.textColor = UIColor(hex: "#E9E3D5")
         label.font = .boldSystemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     private let mostPopularLbl: UILabel = {
         let label = UILabel()
         label.text = "Most Popular 🔃"
-        label.textColor = UIColor(hex: "#F5484A")
+        label.textColor = UIColor(hex: "#E9E3D5")
         label.textAlignment = .left
         label.font = .boldSystemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         
         if let navBar = self.navigationController?.navigationBar.topItem {
             navBar.title = "Burger King"
-            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(hex: "#E9E3D5"),
                                                                        NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .bold)]
             
         }
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     
     
     private func setupUI(){
-        view.backgroundColor = UIColor(hex: "E9E3D5")
+        view.backgroundColor = UIColor(hex: "033043")
         view.addSubview(firstCollectionView)
         NSLayoutConstraint.activate([
             firstCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
