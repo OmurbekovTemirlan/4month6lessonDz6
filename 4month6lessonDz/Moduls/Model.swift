@@ -13,3 +13,8 @@ struct DetailWithApp {
     var nameFood: String
     var numReceipts: String
 }
+struct SecondScreen{
+    var foodPictures: String
+    var nameFood: String
+    var numReceipts: String
+}
